@@ -6,3 +6,7 @@
 .navbar-menu.open {
     transform: translateX(0);
 }
+
+body {
+    overflow-x: hidden;
+}
