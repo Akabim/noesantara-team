@@ -26,11 +26,11 @@
         </div>
         <ul
             class="font-primary-font hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-32">
-            <li><a class="text-sm text-white hover:font-bold" href="#">Home</a></li>
-            <li><a class="text-sm text-white hover:font-bold" href="#">About Us</a></li>
-            <li><a class="text-sm text-white hover:font-bold" href="#">Services</a></li>
+            <li><a class="text-sm text-white hover:font-bold" href="#home">Home</a></li>
+            <li><a class="text-sm text-white hover:font-bold" href="#about">About Us</a></li>
+            <li><a class="text-sm text-white hover:font-bold" href="#work">Our Work</a></li>
         </ul>
-        <a class="font-primary-font text-sm text-white hover:font-bold lg:flex hidden" href="#">Contact</a>
+        <a class="font-primary-font text-sm text-white hover:font-bold lg:flex hidden" href="#contact">Contact</a>
     </nav>
     <div class="navbar-menu relative z-50 hidden">
         <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -52,19 +52,19 @@
                 <ul>
                     <li class="mb-1 font-primary-font">
                         <a class="block p-4 text-sm font-semibold text-white hover:bg-white hover:text-black rounded"
-                            href="#">Home</a>
+                            href="#home">Home</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-white hover:bg-white hover:text-black rounded"
-                            href="#">About Us</a>
+                            href="#about">About Us</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-white hover:bg-white hover:text-black rounded"
-                            href="#">Services</a>
+                            href="#work">Our Works</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-sm font-semibold text-white hover:bg-white hover:text-black rounded"
-                            href="#">Contact</a>
+                            href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -73,7 +73,7 @@
     <section id="home" class="pt-12 lg:pt-24 pb-20">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
-                <div class="z-20 absolute left-0 md:top-20">
+                <div class="z-10 absolute left-0 md:top-20">
                     <img src="./dist/img/gecko-home.png" draggable="false" width="405" height="798"
                         class="brightness-75 lg:brightness-100 lg:w-[500px]" alt="">
                 </div>
@@ -151,7 +151,7 @@
         </div>
     </section>
 
-    <section class="pt-32 lg:pt-72 pb-20">
+    <section id="about" class="pt-32 lg:pt-72 pb-20">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-12 lg:w-1/2 z-30">
@@ -172,7 +172,7 @@
     </section>
 
 
-    <section class="pt-12 lg:pt-72 pb-20">
+    <section id="work" class="pt-12 lg:pt-72 pb-20">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
                 <div class="w-full lg:px-4 px-6 z-30">
@@ -197,7 +197,7 @@
         </div>
     </section>
 
-    <section class="pt-12 lg:pt-72 pb-20">
+    <section id="contact" class="pt-12 lg:pt-72 pb-20">
         <div class="container mx-auto">
             <div class="flex flex-wrap">
                 <div class="z-20 absolute left-0">
@@ -230,8 +230,8 @@
                         Message
                     </label>
 
-                    <textarea type="" id="UserName" placeholder=""
-                        class="mt-1 w-full py-8 px-2 lg:py-24 rounded-md focus:outline-none border-white border-2 bg-white shadow-sm sm:text-sm" />
+                    <textarea type="text" id="UserName" placeholder=""
+                        class="mt-1 w-full h-32  px-2 rounded-md focus:outline-none border-white border-2 bg-white shadow-sm sm:text-sm" />
                     </textarea>
 
                     <div class="w-full inline-flex">
