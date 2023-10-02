@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body class="bg-black overflow-x-hidden">
@@ -187,8 +187,9 @@
                         class="z-10 relative top-10 justify-center self-center mx-auto" alt="">
                     <h4 class="text-white text-center font-primary-font text-2xl lg:text-7xl font-bold">Our Works.</h4>
                     <p class="mt-5 text-gray-100 text-center font-primary-font text-lg font-thin">Lorem ipsum dolor sit
-                        <h4 class="text-white text-center font-primary-font text-2xl lg:text-2xl font-bold mt-10">Video Editing</h4>
-                        amet consectetur adipisicing elit.</p>
+                    <h4 class="text-white text-center font-primary-font text-2xl lg:text-2xl font-bold mt-10">Video
+                        Editing</h4>
+                    amet consectetur adipisicing elit.</p>
                     <div class="mt-2 lg:col-span-2 lg:mx-0 mb-7">
                         <div id="keen-slider-1" class="keen-slider">
                             <div class="keen-slider__slide">
@@ -242,12 +243,12 @@
         <div class="container mx-auto">
             <div class="flex flex-wrap lg:block">
                 <div class="w-full lg:px-4 px-6 z-30 self-center">
-                    <h4 class="text-white text-center font-primary-font text-2xl lg:text-2xl mb-7 font-bold">3D Objects.</h4>
+                    <h4 class="text-white text-center font-primary-font text-2xl lg:text-2xl mb-7 font-bold">3D</h4>
                     <div class="mt-8 lg:col-span-2 lg:mx-0 mb-7">
                         <div id="keen-slider-2" class="keen-slider">
                             <div class="keen-slider__slide">
                                 <div class="w-full">
-                                   <img src="./dist/img/2.png" class="w-96 rounded-md mx-auto" alt="">
+                                    <img src="./dist/img/2.png" class="w-96 rounded-md mx-auto" alt="">
                                 </div>
                             </div>
                             <div class="keen-slider__slide">
@@ -329,8 +330,8 @@
                         class="mt-1 w-full h-32 py-3 px-2 rounded-md focus:outline-none border-white border-2 bg-white shadow-sm sm:text-sm" />
                     </textarea>
 
-                    <div class="w-full inline-flex">
-                        <button
+                    <div class="w-full inline-flex"> 
+                        <button id="send-button" type="submit"
                             class="text-white font-primary-font border-2 border-white w-full rounded-md py-2 lg:py-5 px-4 mt-7">Send</button>
                     </div>
                 </div>
@@ -339,7 +340,8 @@
     </section>
 
     <script src="./dist/js/scripts.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
     <script type="module">
         import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
@@ -397,6 +399,7 @@
 
         keenSliderPrevious2.addEventListener('click', () => keenSlider2.prev())
         keenSliderNext2.addEventListener('click', () => keenSlider2.next())
+
     </script>
 </body>
 
