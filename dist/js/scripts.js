@@ -39,12 +39,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
 var sendButton = document.querySelector('#send-button');
 sendButton.addEventListener('click', function () {
-    Swal.fire(
-        'Pesan Terkirim!',
-        'Akan segera kami balas melalui email.',
-        'success'
-    )
+    // Periksa apakah input pesan kosong
+    var userMessageInput = document.querySelector('#UserMessage');
+    var userMessageValue = userMessageInput.value.trim(); // Hilangkan spasi di awal dan akhir
+
+    if (userMessageValue === '') {
+        // Tampilkan pesan kesalahan jika input pesan kosong
+        Swal.fire(
+            'Error!',
+            'Harap isi pesan Anda.',
+            'error'
+        );
+    } else {
+        // Jika input pesan tidak kosong, tampilkan pesan sukses
+        Swal.fire(
+            'Pesan Terkirim!',
+            'Akan segera kami balas melalui email.',
+            'success'
+        );
+    }
 });

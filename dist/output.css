@@ -1083,16 +1083,19 @@ video {
   transition-duration: 150ms;
 }
 
-.navbar-menu.open {
-  transform: translateX(0);
-}
-
 html {
   overflow-x: hidden;
 }
 
 .logo {
   image-rendering:optimizeQuality;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* Optional, jika Anda ingin mengatur lapisan z-index untuk navbar */
 }
 
 .hover\:bg-white:hover {
